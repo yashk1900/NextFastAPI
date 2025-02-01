@@ -4,6 +4,8 @@ import { useContext, useState, useEffect } from 'react';
 import AuthContext from './context/AuthContext';
 import ProtectedRoute from './components/ProtectedRoutes';
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Home = () => {
   const { user, logout } = useContext(AuthContext);
@@ -116,7 +118,7 @@ const Home = () => {
           </div>
           <div className="accordion-item">
             <h2 className="accordion-header" id="headingTwo">
-              <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                 Create Routine
               </button>
             </h2>
